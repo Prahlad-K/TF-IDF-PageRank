@@ -1,5 +1,5 @@
 # Implementing a Search Engine that uses the TFIDFPageRank score to search a given query
-Uses a special score that combines the functionalities of the TF-IDF measure and the PageRank algorithm's ranks to produce improved search results.
+Uses a special score "TFIDFPageRank" that combines the functionalities of the TF-IDF measure and the PageRank algorithm's ranks to produce improved search results.
 
 Name: K.Prahlad
 
@@ -7,7 +7,7 @@ Class: B.Tech Computer Science 3rd Year, 2nd Semester
 
 Roll Number: 167227
 
-This project is part of the course Advanced Data Mining, as required for the minor examination.
+This project is part of the course Advanced Data Mining at National Institute of Technology, Warangal as required for the Minor-2 Examination.
 
 Project Aims:
 
@@ -20,6 +20,10 @@ Project inputs/parameters:
 2. The total number of iterations to update PageRank.
 3. The Damping Factor
 4. The Query sentence/string
+
+Project output:
+
+A sorted list of webpages, ranked from best to worst- to visit when a query is searched.
 
 Project Description:
 
@@ -45,11 +49,22 @@ I designed the above formula based on reasons elaborated below:
 
 1) The plain pagerank algorithm calculates the pagerank only based on the structural aspects of the website and the webpages. The pagerank of a page is independant of the search query.
 2) Due to this, a clear disadvantage of not efficiently utilizing the search query for ranking is observed. The algorithm would just filter webpages that had the words in the query and sort them using their pageranks.   
-3) To add a support to the pagerank, the TFIDF score would balance the above mentioned problem, as the TFIDF score indicates the importance of a word in a corpus, and thus we would now also be concerned about whether the words in the query are important, or not, with respect to the webpages.
+3) To add a support to the pagerank, the TFIDF score would balance the above mentioned problem (when multiplied with pagerank), as the TFIDF score indicates the importance of a word in a corpus, and thus we would now also be concerned about whether the words in the query are important or not with respect to the webpages.
 4) Thus, if important keywords in a search query are present in pages having a lower PageRank, they are given proper justice in the results, and vice versa.
+5) The TFIDF sum is added with 1, because in some cases the TFIDF score may become 0 (when the keyword is present in all documents). If we directly multiply this value, the PageRank would be 0, which would underrepresent the rank of the page. Thus, adding one retains the pagerank. 
 
+After calculating the above score the Query Processor sorts and prints the results in descending order of TFIDFPageRank scores.
+
+Observations and Conclusion:
+
+It was observed that the algorithm works well for websites that have smaller number of webpages. This is because of the overhead of the TFIDF computation, that would need additional time and space. 
+
+Best number of webpages to crawl: 30
+Best number of iterations: 1000 (PageRank values stabilized beyond this)
+Best Damping Factor observed: 0.85
 
 Notes:
 
-By default, as an example the official Stanford NLP group website has been taken as the website in which we would search our queries.
-https://nlp.stanford.edu
+By default, as an example the official Stanford NLP group website has been taken as the website in which we would search our queries. Link- https://nlp.stanford.edu
+
+Please refer to the PNG files attached to this repository to check how the expected input and output should look like.
