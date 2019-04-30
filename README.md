@@ -1,13 +1,13 @@
 # Implementing a Search Engine that uses the TFIDFPageRank score to search a given query
 Uses a special score "TFIDFPageRank" that combines the functionalities of the TF-IDF measure and the PageRank algorithm's ranks to produce improved search results.
 
-Name: K.Prahlad
+Name: K.Prahlad 
 
 Class: B.Tech Computer Science 3rd Year, 2nd Semester
 
 Roll Number: 167227
 
-This project is part of the course Advanced Data Mining at National Institute of Technology, Warangal as required for the Minor-2 Examination.
+This project is an individual project as part of the course "Advanced Data Mining" at National Institute of Technology, Warangal as required for the Minor-2 Examination.
 
 # Project Aims:
 
@@ -72,3 +72,5 @@ As the damping factor was raised, the individual values of the TFIDFPageRank dec
 By default, as an example the official Stanford NLP group website has been taken as the website in which we would search our queries. Link- https://nlp.stanford.edu
 
 Please refer to the PNG files attached to this repository to check how the expected input and output should look like, with changing damping factor and number of iterations.
+
+This project has been done individually. 
