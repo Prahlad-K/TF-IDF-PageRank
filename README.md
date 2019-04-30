@@ -51,7 +51,7 @@ I designed the above formula based on reasons elaborated below:
 2) Due to this, a clear disadvantage of not efficiently utilizing the search query for ranking is observed. The algorithm would just filter webpages that had the words in the query and sort them using their pageranks.   
 3) To add a support to the pagerank, the TFIDF score would balance the above mentioned problem (when multiplied with pagerank), as the TFIDF score indicates the importance of a word in a corpus, and thus we would now also be concerned about whether the words in the query are important or not with respect to the webpages.
 4) Thus, if important keywords in a search query are present in pages having a lower PageRank, they are given proper justice in the results, and vice versa.
-5) The TFIDF sum is added with 1, because in some cases the TFIDF score may become 0 (when the keyword is present in all documents). If we directly multiply this value, the PageRank would be 0, which would underrepresent the rank of the page. Thus, adding one retains the pagerank. 
+5) The TFIDF sum is added with 1, because in some cases the TFIDF score may become 0 (when the keyword is present in all documents). If we directly multiply this value, the PageRank would be 0, which would underrepresent the rank of the page. Thus, adding one retains the pagerank whenever necessary.
 
 After calculating the above score the Query Processor sorts and prints the results in descending order of TFIDFPageRank scores.
 
@@ -60,7 +60,9 @@ After calculating the above score the Query Processor sorts and prints the resul
 It was observed that the algorithm works well for websites that have smaller number of webpages. This is because of the overhead of the TFIDF computation, that would need additional time and space. 
 
 Best number of webpages to crawl: 30
+
 Best number of iterations: 1000 (PageRank values stabilized beyond this)
+
 Best Damping Factor observed: 0.85
 
 # Notes:
