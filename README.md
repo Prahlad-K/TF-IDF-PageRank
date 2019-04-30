@@ -10,29 +10,24 @@ This project is part of the course Advanced Data Mining, as required for the min
 
 Project Aims:
 
-	1. To understand the basic working of a general search engine, and to implement TF-IDF and the Google PageRank Algorithm. 
-	2. To search a given query on a given website, and rank all webpages in terms of a score that uses the TF-IDF of the query keywords with respect to the website corpus and the PageRank obtained from performing Web Mining on the website.
+1. To understand the basic working of a general search engine, and to implement TF-IDF and the Google PageRank Algorithm. 
+2. To search a given query on a given website, and rank all webpages in terms of a score that uses the TF-IDF of the query keywords with respect to the website corpus and the PageRank obtained from performing Web Mining on the website.
 
 Project Description:
+Most basic search engines have 3 parts:
+1. Crawler
+2. Indexer
+3. Query Processor
 
-	Most basic search engines have 3 parts:
+Crawler:
+A crawler crawls the web page, fetch the contens and links in the page and stores them. 
+The developer of a website can define a file called Robot.txt that defines how frequently a crawler is allowed to crawl and 
+which web pages it is allowed to crawl.
 
-	1. Indexer
-	2. Crawler
-	3. Query Processor
+Indexer:
+Indexes the content of web page fetched by crawler. It also filters important words to be indexed out of the content.
 
-	Crawler:
+Query Processor:
+This program basically processes the query entered by the user, fetches the indexes of the query, calculate the page rank, sort them and ten displays the result. This is just simple explanantion of query processor but it includes a lot more than this like	making sense of the query and give suggestions by using Machine Learning algorrithms.
 
-	A crawler crawls the web page, fetch the contens and links in the page and stores them. 
-	The developer of a website can define a file called Robot.txt that defines how frequently a crawler is allowed to crawl and 
-	which web pages it is allowed to crawl.
-
-	Indexer:
-
-	Indexes the content of web page fetched by crawler. It also filters important words to be indexed out of the content.
-
-	Query Processor
-
-	This program basically processes the query entered by the user, fetches the indexes of the query, calculate the page rank, sort 	them and ten displays the result. This is just simple explanantion of query processor but it includes a lot more than this like 	making sense of the query and give suggestions by using Machine Learning algorrithms.
-
-	All these 3 programs are almost same in each search engine whether it is Microsoft Bing or yahoo or google search engine. They 		all differ in their implementation of Ranking algorithm. Page Rank algorithm is google's patented algorithm.
+All these 3 programs are almost same in each search engine whether it is Microsoft Bing or yahoo or google search engine. They all differ in their implementation of Ranking algorithm. Page Rank algorithm is google's patented algorithm.
