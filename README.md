@@ -1,4 +1,4 @@
-# TF-IDF-PageRank
+# Implementing a Search Engine that uses the TFIDFPageRank score to search a given query
 Uses a special score that combines the functionalities of the TF-IDF measure and the PageRank algorithm's ranks to produce improved search results.
 
 Name: K.Prahlad
