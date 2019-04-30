@@ -33,7 +33,7 @@ Most basic search engines have main 3 parts. Thus, my implementation has the fol
 3. Query Processor
 
 Crawler:
-A crawler crawls the web page, fetch the contents and links in the page and stores them. 
+A crawler crawls the web page, fetches the contents and links in the page and stores them. 
 The developer of a website can define a file called Robot.txt that defines how frequently a crawler is allowed to crawl and 
 which web pages it is allowed to crawl. The crawler program in this project works in a similar fashion, looking up new links exhaustively and storing their content. It also computes the graph (web structure mining) of the webpages, used for PageRank.
  
@@ -47,7 +47,7 @@ TFIDFPageRank of a document = (PageRank of the document) * (sum of the TF-IDF sc
 
 I designed the above formula based on reasons elaborated below:
 
-1) The plain pagerank algorithm calculates the pagerank only based on the structural aspects of the website and the webpages. The pagerank of a page is independant of the search query.
+1) The plain pagerank algorithm calculates the pagerank only based on the structural aspects of the website and the webpages. The pagerank of a page is independent of the search query.
 2) Due to this, a clear disadvantage of not efficiently utilizing the search query for ranking is observed. The algorithm would just filter webpages that had the words in the query and sort them using their pageranks.   
 3) To add a contextual support to the pagerank, the TFIDF score would balance the above mentioned problem (when multiplied with pagerank), as the TFIDF score indicates the importance of a word in a corpus, and thus we would now also be concerned about whether the words in the query are important or not with respect to the webpages.
 4) Thus, if important keywords in a search query are present in pages having a lower PageRank, they are given proper justice in the results, and vice versa.
