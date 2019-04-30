@@ -14,14 +14,14 @@ This project is part of the course Advanced Data Mining at National Institute of
 1. To understand the basic working of a general search engine, and to implement TF-IDF and the Google PageRank Algorithm. 
 2. To search a given query on a given website, and rank all webpages in terms of a score that uses the TF-IDF of the query keywords with respect to the website corpus and the PageRank obtained from performing Web Structure Mining on the website.
 
-# Project inputs/parameters:
+# Project Inputs/Parameters:
 
 1. Maximum number of webpages to crawl in the website.
 2. The total number of iterations to update PageRank.
 3. The Damping Factor
 4. The Query sentence/string
 
-# Project output:
+# Project Output:
 
 A sorted list of webpages, ranked from best to worst- to visit when a query is searched.
 
@@ -59,14 +59,16 @@ After calculating the above score the Query Processor sorts and prints the resul
 
 It was observed that the algorithm works well for websites that have smaller number of webpages. This is because of the overhead of the TFIDF computation, that would need additional time and space. 
 
-Best number of webpages to crawl: 30
+Best number of webpages to crawl: <=40 (for my computer running an Intel i5 processor on 4 GB RAM)
 
 Best number of iterations: 1000 (PageRank values stabilized beyond this)
 
 Best Damping Factor observed: 0.85
 
+As the damping factor was raised, the individual values of the TFIDFPageRank decreased, yet the ordering remained the same.
+
 # Notes:
 
 By default, as an example the official Stanford NLP group website has been taken as the website in which we would search our queries. Link- https://nlp.stanford.edu
 
-Please refer to the PNG files attached to this repository to check how the expected input and output should look like.
+Please refer to the PNG files attached to this repository to check how the expected input and output should look like, with changing damping factor and number of iterations.
