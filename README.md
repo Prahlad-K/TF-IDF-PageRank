@@ -2,8 +2,11 @@
 Uses a special score that combines the functionalities of the TF-IDF measure and the PageRank algorithm's ranks to produce improved search results.
 
 Name: K.Prahlad
+
 Class: B.Tech Computer Science 3rd Year, 2nd Semester
+
 Roll Number: 167227
+
 Subject: Advanced Data Mining
 
 This project is part of the course Advanced Data Mining, as required for the minor examination.
