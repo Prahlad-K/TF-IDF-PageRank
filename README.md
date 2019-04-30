@@ -9,12 +9,13 @@ Subject: Advanced Data Mining
 This project is part of the course Advanced Data Mining, as required for the minor examination.
 
 Project Aims:
+
 	1. To understand the basic working of a general search engine, and to implement TF-IDF and the Google PageRank Algorithm. 
 	2. To search a given query on a given website, and rank all webpages in terms of a score that uses the TF-IDF of the query keywords with respect to the website corpus and the PageRank obtained from performing Web Mining on the website.
 
 Project Description:
-	
-	Search Engine has 3 parts:
+
+	Most basic search engines have 3 parts:
 
 	1. Indexer
 	2. Crawler
@@ -32,10 +33,6 @@ Project Description:
 
 	Query Processor
 
-	This program basically processes the query entered by the user, fetches the indexes of the query, calculate the page rank, sort them and 
-	then displays the result. This is just simple explanantion of query processor but it includes a lot more than this like making sense of 
-	the query and give suggestions by using Machine Learning algorrithms.
+	This program basically processes the query entered by the user, fetches the indexes of the query, calculate the page rank, sort 	them and ten displays the result. This is just simple explanantion of query processor but it includes a lot more than this like 	making sense of the query and give suggestions by using Machine Learning algorrithms.
 
-All these 3 programs are almost same in each search engine whether it is Microsoft Bing or yahoo or google search engine. They all differ
-in their implementation of Ranking algorithm. 
-Page Rank algorithm is google's patented algorithm.
+	All these 3 programs are almost same in each search engine whether it is Microsoft Bing or yahoo or google search engine. They 		all differ in their implementation of Ranking algorithm. Page Rank algorithm is google's patented algorithm.
