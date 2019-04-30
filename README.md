@@ -12,7 +12,7 @@ This project is part of the course Advanced Data Mining at National Institute of
 Project Aims:
 
 1. To understand the basic working of a general search engine, and to implement TF-IDF and the Google PageRank Algorithm. 
-2. To search a given query on a given website, and rank all webpages in terms of a score that uses the TF-IDF of the query keywords with respect to the website corpus and the PageRank obtained from performing Web Mining on the website.
+2. To search a given query on a given website, and rank all webpages in terms of a score that uses the TF-IDF of the query keywords with respect to the website corpus and the PageRank obtained from performing Web Structure Mining on the website.
 
 Project inputs/parameters:
 
