@@ -3,9 +3,9 @@ Uses a special score "TFIDFPageRank" that combines the functionalities of the TF
 
 Name: K.Prahlad 
 
-Class: B.Tech Computer Science 3rd Year, 2nd Semester
+Class: B.Tech Computer Science 3rd Year, 2nd Semester 
 
-Roll Number: 167227
+Roll Number: 167227 (Section-B)
 
 This project is an individual project as part of the course "Advanced Data Mining" at National Institute of Technology, Warangal as required for the Minor-2 Examination.
 
